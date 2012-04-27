@@ -8033,3 +8033,2468 @@ Served asset /jquery_ujs.js - 304 Not Modified (2ms)
 
 Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-26 23:13:37 -0400
 Served asset /leather_texture.jpg - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-26 23:39:18 -0400
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (0.8ms)
+  Rendered shared/_head.html.erb (39.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (157.9ms)
+  Rendered shared/_navigation_bar.html.erb (160.0ms)
+  Rendered shared/_flash_notices.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (162.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 246ms (Views: 162.6ms | ActiveRecord: 83.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:39:20 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:39:20 -0400
+Served asset /application.js - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:39:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:39:20 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-26 23:39:20 -0400
+Served asset /leather_texture.jpg - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-26 23:40:17 -0400
+Processing by HomepageController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1[0m
+  Rendered books/_index.html.haml (84.2ms)
+  Rendered homepage/index.html.haml within layouts/application (86.3ms)
+  Rendered shared/_head.html.erb (2.1ms)
+  Rendered shared/_user_bar.html.erb (0.4ms)
+  Rendered shared/_navigation_bar.html.erb (1.8ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 66.7ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:40:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:40:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:40:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:40:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-26 23:40:18 -0400
+Served asset /leather_texture.jpg - 200 OK (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:40:29 -0400
+
+ActionController::RoutingError (uninitialized constant Admin):
+  app/controllers/books_controller.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:41:21 -0400
+
+ActionController::RoutingError (uninitialized constant Admin):
+  app/controllers/books_controller.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:42:09 -0400
+Processing by BooksController#new as HTML
+ERROR: compiling _app_views_books__form_html_haml__3952153803560288528_2186116540 RAISED /Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);if @book.errors.any?
+ ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>...
+                           ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected $undefined
+...("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:5: syntax error, unexpected '}', expecting keyword_end
+));}</h2>\n  <ul>\n", 1, false);
+    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: unknown regexp option - l
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: syntax error, unexpected $undefined
+));}</li>\n", 0, false);end
+          ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: unknown regexp options - dv
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: syntax error, unexpected $undefined
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+                                    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adj...
+                              ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected $undefined
+...sh_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1);...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: unterminated regexp meets end of file
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_books__form_html_haml__3952153803560288528_2186116540(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "books/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( form_for @book, :url => root_path do |f|
+));}\n", 0, false);if @book.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false(("#{pluralize(@book.errors.count, "error")} prohibited this admin_performance from being saved:"
+));}</h2>\n  <ul>\n", 1, false);
+ @performance.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.submit 'Save'
+));}\n</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/Users/msherman/Downloads/book-collector/app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml___4018721026497789118_2186078520'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:143:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:403:in `_run__1607182183784637328__process_action__1107028918633196410__callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__1317001514368802090__call__118104989582113195__callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered books/_form.html.haml (2.4ms)
+  Rendered books/new.html.haml (4.4ms)
+Completed 500 Internal Server Error in 132ms
+
+ActionView::Template::Error (/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);if @book.errors.any?
+ ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>...
+                           ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected $undefined
+...("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:5: syntax error, unexpected '}', expecting keyword_end
+));}</h2>\n  <ul>\n", 1, false);
+    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: unknown regexp option - l
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: syntax error, unexpected $undefined
+));}</li>\n", 0, false);end
+          ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: unknown regexp options - dv
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: syntax error, unexpected $undefined
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+                                    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adj...
+                              ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected $undefined
+...sh_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1);...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: unterminated regexp meets end of file
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: syntax error, unexpected $end, expecting keyword_end):
+    1: = form_for @book, :url => root_path do |f|
+    2: -if @book.errors.any?
+    3:   #error_explanation
+    4:     %h2= "#{pluralize(@book.errors.count, "error")} prohibited this admin_performance from being saved:"
+    5:     %ul
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml___4018721026497789118_2186078520'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2012-04-26 23:42:58 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant BooksController::BookDecorator):
+  app/controllers/books_controller.rb:3:in `index'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2012-04-26 23:47:31 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant BooksController::BookDecorator):
+  app/controllers/books_controller.rb:3:in `index'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2012-04-26 23:50:52 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template books/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/msherman/Downloads/book-collector/app/views"
+  * "/Users/msherman/Downloads/book-collector/vendor/bundle/gems/devise-2.0.4/app/views"
+):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/path_set.rb:58:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/lookup_context.rb:109:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:10:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:403:in `_run__2966857597507175405__process_action__3899574787736427147__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4159190652586932554__call__640426405337904629__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-26 23:51:21 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (175.8ms)
+  Rendered homepage/index.html.haml within layouts/application (181.6ms)
+  Rendered shared/_head.html.erb (40.6ms)
+  Rendered shared/_user_bar.html.erb (1.1ms)
+  Rendered shared/_navigation_bar.html.erb (3.3ms)
+  Rendered shared/_flash_notices.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (6.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 236ms (Views: 136.1ms | ActiveRecord: 99.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:51:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:51:21 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:51:21 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:51:21 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:51:34 -0400
+Processing by BooksController#new as HTML
+ERROR: compiling _app_views_books__form_html_haml__921341784467060468_2177910260 RAISED /Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);if @book.errors.any?
+ ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>...
+                           ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected $undefined
+...("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:5: syntax error, unexpected '}', expecting keyword_end
+));}</h2>\n  <ul>\n", 1, false);
+    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: unknown regexp option - l
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: syntax error, unexpected $undefined
+));}</li>\n", 0, false);end
+          ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: unknown regexp options - dv
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: syntax error, unexpected $undefined
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+                                    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adj...
+                              ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected $undefined
+...sh_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1);...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: unterminated regexp meets end of file
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_books__form_html_haml__921341784467060468_2177910260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "books/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( form_for @book, :url => root_path do |f|
+));}\n", 0, false);if @book.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false(("#{pluralize(@book.errors.count, "error")} prohibited this admin_performance from being saved:"
+));}</h2>\n  <ul>\n", 1, false);
+ @performance.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.submit 'Save'
+));}\n</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers.rb:90:in `non_haml'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/Users/msherman/Downloads/book-collector/app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__3383053423356732777_2172135060'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:143:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:403:in `_run__2966857597507175405__process_action__2240709868251124130__callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4159190652586932554__call__640426405337904629__callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/msherman/Downloads/book-collector/vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered books/_form.html.haml (2.4ms)
+  Rendered books/new.html.haml (4.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:2: syntax error, unexpected ')'
+));}\n", 0, false);if @book.errors.any?
+ ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>...
+                           ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:3: syntax error, unexpected $undefined
+...("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:5: syntax error, unexpected '}', expecting keyword_end
+));}</h2>\n  <ul>\n", 1, false);
+    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: unknown regexp option - l
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:8: syntax error, unexpected $undefined
+));}</li>\n", 0, false);end
+          ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: unknown regexp options - dv
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:9: syntax error, unexpected $undefined
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+                                    ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+_hamlout.push_text("<div class='actions'>\n  #{_hamlout.adj...
+                              ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:10: syntax error, unexpected $undefined
+...sh_text("<div class='actions'>\n  #{_hamlout.adjust_tabs(1);...
+...                               ^
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: unterminated regexp meets end of file
+/Users/msherman/Downloads/book-collector/app/views/books/_form.html.haml:11: syntax error, unexpected $end, expecting keyword_end):
+    1: = form_for @book, :url => root_path do |f|
+    2: -if @book.errors.any?
+    3:   #error_explanation
+    4:     %h2= "#{pluralize(@book.errors.count, "error")} prohibited this admin_performance from being saved:"
+    5:     %ul
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__3383053423356732777_2172135060'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:53:04 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (4.7ms)
+  Rendered books/new.html.haml (6.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:54:45 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (31.6ms)
+  Rendered books/new.html.haml (33.2ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:55:18 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (39.4ms)
+  Rendered books/new.html.haml (40.5ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `canonical_name' for #<Book:0x00000101123bd8>):
+    8:   .field
+    9:     = f.label :title
+    10:     = f.text_field :canonical_name
+    11:   .field
+    12:     = f.label :author
+    13:     = f.text_field :canonical_name
+    14: 
+  app/views/books/_form.html.haml:11:in `block in _app_views_books__form_html_haml__921341784467060468_2180454760'
+  app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml__921341784467060468_2180454760'
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__3383053423356732777_2172135060'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-26 23:55:31 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (5.2ms)
+  Rendered books/new.html.haml (6.3ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-04-26 23:55:56 -0400
+Processing by HomepageController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Moby DIck", "author"=>"Herman Melville"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (2.7ms)
+  Rendered homepage/index.html.haml within layouts/application (3.9ms)
+  Rendered shared/_head.html.erb (2.0ms)
+  Rendered shared/_user_bar.html.erb (0.4ms)
+  Rendered shared/_navigation_bar.html.erb (1.9ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:55:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:55:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:55:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:55:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-04-27 00:02:04 -0400
+Processing by HomepageController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Moby DIck", "author"=>"Herman Melville"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (352.1ms)
+  Rendered homepage/index.html.haml within layouts/application (353.1ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  Rendered shared/_user_bar.html.erb (0.6ms)
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (113.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 475ms (Views: 202.0ms | ActiveRecord: 272.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:02:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:02:06 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (32ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:02:28 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (4.8ms)
+  Rendered homepage/index.html.haml within layouts/application (5.8ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.2ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:02:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:02:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:02:29 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:03:01 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (7.8ms)
+  Rendered homepage/index.html.haml within layouts/application (9.0ms)
+  Rendered shared/_head.html.erb (2.3ms)
+  Rendered shared/_user_bar.html.erb (0.6ms)
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:03:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:03:02 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:03:04 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (3.6ms)
+  Rendered books/new.html.haml within layouts/application (4.8ms)
+  Rendered shared/_head.html.erb (2.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (3.4ms)
+  Rendered shared/_navigation_bar.html.erb (4.1ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (6.3ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 18.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:03:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:03:05 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Processing by HomepageController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Moby DIck", "author"=>"Herman Melville"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1[0m
+  Rendered books/_index.html.haml (3.8ms)
+  Rendered homepage/index.html.haml within layouts/application (4.9ms)
+  Rendered shared/_head.html.erb (3.0ms)
+  Rendered shared/_user_bar.html.erb (0.7ms)
+  Rendered shared/_navigation_bar.html.erb (1.7ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:03:29 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:14:04 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (5.7ms)
+  Rendered books/new.html.haml within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `user' for #<Book:0x00000100db9b50>):
+    7:           %li= msg
+    8:   =f.hidden_field(:user)
+    9:   .field
+    10:     = f.label :title
+    11:     = f.text_field :title
+    12:   .field
+    13:     = f.label :author
+  app/views/books/_form.html.haml:10:in `block in _app_views_books__form_html_haml___2266136340372726533_2155002080'
+  app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml___2266136340372726533_2155002080'
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__1337027019886940163_2154937180'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.6ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:14:21 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (5.3ms)
+  Rendered books/new.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `user' for #<Book:0x00000100b2a920>):
+    7:           %li= msg
+    8:   =f.hidden_field :user
+    9:   .field
+    10:     = f.label :title
+    11:     = f.text_field :title
+    12:   .field
+    13:     = f.label :author
+  app/views/books/_form.html.haml:10:in `block in _app_views_books__form_html_haml___2266136340372726533_2168776860'
+  app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml___2266136340372726533_2168776860'
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__1337027019886940163_2154937180'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.9ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.7ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:14:34 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (6.9ms)
+  Rendered books/new.html.haml within layouts/application (8.2ms)
+  Rendered shared/_head.html.erb (109.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (75.0ms)
+  Rendered shared/_navigation_bar.html.erb (76.3ms)
+  Rendered shared/_flash_notices.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (79.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 203ms (Views: 171.9ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:14:34 -0400
+Served asset /application.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:14:34 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:14:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:14:34 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:14:35 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:15:29 -0400
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered books/_form.html.haml (6.5ms)
+  Rendered books/new.html.haml within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `merge' for #<User:0x00000100e11350>):
+    7:           %li= msg
+    8:   =f.hidden_field :user_id, current_user
+    9:   .field
+    10:     = f.label :title
+    11:     = f.text_field :title
+    12:   .field
+    13:     = f.label :author
+  app/views/books/_form.html.haml:10:in `block in _app_views_books__form_html_haml___2266136340372726533_2154729680'
+  app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml___2266136340372726533_2154729680'
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__1337027019886940163_2154937180'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.7ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:15:39 -0400
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered books/_form.html.haml (6.5ms)
+  Rendered books/new.html.haml within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `merge' for 1:Fixnum):
+    7:           %li= msg
+    8:   =f.hidden_field :user_id, current_user.id
+    9:   .field
+    10:     = f.label :title
+    11:     = f.text_field :title
+    12:   .field
+    13:     = f.label :author
+  app/views/books/_form.html.haml:10:in `block in _app_views_books__form_html_haml___2266136340372726533_2155211100'
+  app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml___2266136340372726533_2155211100'
+  app/views/books/new.html.haml:3:in `_app_views_books_new_html_haml__1337027019886940163_2154937180'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:23:33 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (6.3ms)
+  Rendered books/new.html.haml within layouts/application (7.4ms)
+  Rendered shared/_head.html.erb (1.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_user_bar.html.erb (33.8ms)
+  Rendered shared/_navigation_bar.html.erb (34.6ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (36.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 46.2ms | ActiveRecord: 85.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:23:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:23:35 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Processing by HomepageController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Moby Dick", "author"=>"Herman Melville"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.5ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (87.2ms)
+  Rendered homepage/index.html.haml within layouts/application (89.2ms)
+  Rendered shared/_head.html.erb (2.1ms)
+  Rendered shared/_user_bar.html.erb (0.4ms)
+  Rendered shared/_navigation_bar.html.erb (1.0ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:23:46 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:24:45 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (5.5ms)
+  Rendered books/new.html.haml within layouts/application (6.7ms)
+  Rendered shared/_head.html.erb (1.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (2.1ms)
+  Rendered shared/_navigation_bar.html.erb (2.6ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:24:46 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books/new" for 127.0.0.1 at 2012-04-27 00:24:58 -0400
+
+ActionController::RoutingError (No route matches [POST] "/books/new"):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/books/new" for 127.0.0.1 at 2012-04-27 00:28:34 -0400
+
+ActionController::RoutingError (No route matches [POST] "/books/new"):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/books/new" for 127.0.0.1 at 2012-04-27 00:28:45 -0400
+
+ActionController::RoutingError (No route matches [POST] "/books/new"):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (268.9ms)
+  Rendered homepage/index.html.haml within layouts/application (274.5ms)
+  Rendered shared/_head.html.erb (42.9ms)
+  Rendered shared/_user_bar.html.erb (1.1ms)
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+  Rendered shared/_flash_notices.html.erb (0.6ms)
+  Rendered shared/_header.html.erb (4.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 349ms (Views: 223.6ms | ActiveRecord: 124.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:30:02 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (6.0ms)
+  Rendered books/new.html.haml within layouts/application (8.4ms)
+  Rendered shared/_head.html.erb (2.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (2.3ms)
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:30:05 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:30:17 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Moby Dick", "author"=>"Herman Melville"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('Herman Melville', '2012-04-27 04:30:17', 'Moby Dick', '2012-04-27 04:30:17', 1)
+  [1m[36m (55.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/books.1
+Completed 302 Found in 131ms (ActiveRecord: 56.5ms)
+
+
+Started GET "/books.1" for 127.0.0.1 at 2012-04-27 00:30:18 -0400
+Processing by BooksController#index as 
+Completed 500 Internal Server Error in 11ms
+
+ActionView::MissingTemplate (Missing template books/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/msherman/Downloads/book-collector/app/views"
+  * "/Users/msherman/Downloads/book-collector/vendor/bundle/gems/devise-2.0.4/app/views"
+):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/path_set.rb:58:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/lookup_context.rb:109:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:10:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__4294472386707841506__process_action__1240576947286930078__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4505974706325446618__call__2962779164732978957__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2012-04-27 00:30:49 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.5ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template books/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/msherman/Downloads/book-collector/app/views"
+  * "/Users/msherman/Downloads/book-collector/vendor/bundle/gems/devise-2.0.4/app/views"
+):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/path_set.rb:58:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/lookup_context.rb:109:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:10:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__4294472386707841506__process_action__3226602177221412550__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4505974706325446618__call__2962779164732978957__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2012-04-27 00:32:43 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendered books/show.html.haml within layouts/application (1.4ms)
+  Rendered shared/_head.html.erb (2.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_user_bar.html.erb (2.3ms)
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (4.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:32:44 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/" for 127.0.0.1 at 2012-04-27 00:33:08 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template books/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/msherman/Downloads/book-collector/app/views"
+  * "/Users/msherman/Downloads/book-collector/vendor/bundle/gems/devise-2.0.4/app/views"
+):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/path_set.rb:58:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/lookup_context.rb:109:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:10:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__4294472386707841506__process_action__1240576947286930078__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4505974706325446618__call__2962779164732978957__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (4.3ms)
+  Rendered homepage/index.html.haml within layouts/application (5.4ms)
+  Rendered shared/_head.html.erb (2.3ms)
+  Rendered shared/_user_bar.html.erb (0.6ms)
+  Rendered shared/_navigation_bar.html.erb (1.5ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:33:22 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:35:52 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (2.6ms)
+  Rendered books/new.html.haml within layouts/application (3.8ms)
+  Rendered shared/_head.html.erb (2.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (2.2ms)
+  Rendered shared/_navigation_bar.html.erb (2.8ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:35:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:35:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:35:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:35:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:35:53 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:36:04 -0400
+Processing by HomepageController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1[0m
+  Rendered books/_index.html.haml (4.9ms)
+  Rendered homepage/index.html.haml within layouts/application (317.4ms)
+  Rendered shared/_head.html.erb (3.2ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (1.7ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.6ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 813ms (Views: 811.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:36:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:36:05 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:36:07 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (2.7ms)
+  Rendered books/new.html.haml within layouts/application (3.8ms)
+  Rendered shared/_head.html.erb (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_user_bar.html.erb (2.3ms)
+  Rendered shared/_navigation_bar.html.erb (3.0ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.4ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:36:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:36:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:36:08 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:36:29 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Tom Sawyer", "author"=>"Mark Twain"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (65.6ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('Mark Twain', '2012-04-27 04:36:29', 'Tom Sawyer', '2012-04-27 04:36:29', 1)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/books.2
+Completed 302 Found in 71ms (ActiveRecord: 66.8ms)
+
+
+Started GET "/books.2" for 127.0.0.1 at 2012-04-27 00:36:29 -0400
+Processing by BooksController#index as 
+Completed 500 Internal Server Error in 11ms
+
+ActionView::MissingTemplate (Missing template books/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/msherman/Downloads/book-collector/app/views"
+  * "/Users/msherman/Downloads/book-collector/vendor/bundle/gems/devise-2.0.4/app/views"
+):
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/path_set.rb:58:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/lookup_context.rb:109:in `find'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:10:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__4294472386707841506__process_action__1240576947286930078__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+  vendor/bundle/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/bundle/gems/sass-3.1.15/lib/sass/plugin/rack.rb:54:in `call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+  vendor/bundle/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4505974706325446618__call__2962779164732978957__callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/bundle/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/msherman/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/books.2" for 127.0.0.1 at 2012-04-27 00:38:46 -0400
+Processing by BooksController#index as 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (4.3ms)
+  Rendered books/index.html.haml within layouts/application (6.8ms)
+  Rendered shared/_head.html.erb (3.2ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.0ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:38:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:38:47 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (2.9ms)
+  Rendered books/new.html.haml within layouts/application (4.1ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (2.4ms)
+  Rendered shared/_navigation_bar.html.erb (3.0ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.4ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:38:53 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"The Hobbit", "author"=>"J.R.R. Tolkein"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('J.R.R. Tolkein', '2012-04-27 04:39:07', 'The Hobbit', '2012-04-27 04:39:07', 1)
+  [1m[36m (17.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/books.3
+Completed 302 Found in 24ms (ActiveRecord: 18.9ms)
+
+
+Started GET "/books.3" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Processing by BooksController#index as 
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1[0m
+  Rendered books/_index.html.haml (4.2ms)
+  Rendered books/index.html.haml within layouts/application (5.1ms)
+  Rendered shared/_head.html.erb (2.7ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.2ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:39:07 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1[0m
+  Rendered books/_index.html.haml (3.9ms)
+  Rendered books/index.html.haml within layouts/application (5.6ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.2ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:39:30 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (3.2ms)
+  Rendered books/new.html.haml within layouts/application (4.4ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_user_bar.html.erb (2.3ms)
+  Rendered shared/_navigation_bar.html.erb (2.9ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.3ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:39:50 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4=", "book"=>{"title"=>"Cryptonomicon", "author"=>"Bruce Stephenson"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('Bruce Stephenson', '2012-04-27 04:40:15', 'Cryptonomicon', '2012-04-27 04:40:15', 1)[0m
+  [1m[35m (238.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/books.4
+Completed 302 Found in 244ms (ActiveRecord: 239.0ms)
+
+
+Started GET "/books.4" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Processing by BooksController#index as 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.5ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 1
+  Rendered books/_index.html.haml (5.0ms)
+  Rendered books/index.html.haml within layouts/application (6.2ms)
+  Rendered shared/_head.html.erb (3.3ms)
+  Rendered shared/_user_bar.html.erb (0.7ms)
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+  Rendered shared/_flash_notices.html.erb (0.3ms)
+  Rendered shared/_header.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:40:15 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-04-27 00:40:35 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S2s//1rlwn/VFFaeu110/yr3LyiV+8QwsdhKIzu7TV4="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:40:35 -0400
+Processing by HomepageController#index as HTML
+  Rendered books/_index.html.haml (2.2ms)
+  Rendered homepage/index.html.haml within layouts/application (32.4ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    1: %h1
+    2:   #{current_user.email}'s Books
+    3: 
+    4: = link_to 'Add Book', new_book_path
+    5: 
+  app/views/books/_index.html.haml:2:in `_app_views_books__index_html_haml___1152075321946633067_2180193660'
+  app/views/homepage/index.html.haml:1:in `_app_views_homepage_index_html_haml___3064092144913972379_2180111920'
+
+
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered vendor/bundle/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:43:35 -0400
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.haml within layouts/application (1.6ms)
+  Rendered shared/_head.html.erb (2.4ms)
+  Rendered shared/_user_bar.html.erb (1.1ms)
+  Rendered shared/_navigation_bar.html.erb (1.6ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:43:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:43:36 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/_links.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.4ms)
+  Rendered shared/_head.html.erb (2.4ms)
+  Rendered shared/_user_bar.html.erb (1.2ms)
+  Rendered shared/_navigation_bar.html.erb (2.1ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:43:42 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7JBUxcXjEZGDAe+Cl7aAIji54tvq8Za8BDgxsyFIukU=", "user"=>{"email"=>"foo@bar.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'foo@bar.com' LIMIT 1[0m
+  [1m[35mSQL (10.2ms)[0m  INSERT INTO `users` (`created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `last_sign_in_at`, `last_sign_in_ip`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `updated_at`) VALUES ('2012-04-27 04:44:00', NULL, NULL, 'foo@bar.com', '$2a$10$rXgHcqpMj5obXb45w9g7/uUBd1xD4fY1L0HVv2t2W10hTyeY6I3.a', NULL, NULL, NULL, NULL, NULL, 0, '2012-04-27 04:44:00')
+  [1m[36m (28.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-04-27 04:44:00', `current_sign_in_at` = '2012-04-27 04:44:00', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-04-27 04:44:00' WHERE `users`.`id` = 2[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 163ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 2
+  Rendered books/_index.html.haml (2.0ms)
+  Rendered homepage/index.html.haml within layouts/application (5.1ms)
+  Rendered shared/_head.html.erb (2.3ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.1ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:44:00 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (29.5ms)
+  Rendered books/new.html.haml within layouts/application (31.0ms)
+  Rendered shared/_head.html.erb (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered shared/_user_bar.html.erb (2.3ms)
+  Rendered shared/_navigation_bar.html.erb (3.0ms)
+  Rendered shared/_flash_notices.html.erb (0.1ms)
+  Rendered shared/_header.html.erb (4.4ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:44:04 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7JBUxcXjEZGDAe+Cl7aAIji54tvq8Za8BDgxsyFIukU=", "book"=>{"title"=>"Foo", "author"=>"Bar"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('Bar', '2012-04-27 04:44:08', 'Foo', '2012-04-27 04:44:08', 2)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/books.5
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/books.5" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Processing by BooksController#index as 
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 2[0m
+  Rendered books/_index.html.haml (3.7ms)
+  Rendered books/index.html.haml within layouts/application (4.6ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  Rendered shared/_user_bar.html.erb (0.4ms)
+  Rendered shared/_navigation_bar.html.erb (1.1ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:44:08 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Processing by BooksController#new as HTML
+  Rendered books/_form.html.haml (3.3ms)
+  Rendered books/new.html.haml within layouts/application (4.6ms)
+  Rendered shared/_head.html.erb (2.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  Rendered shared/_user_bar.html.erb (29.6ms)
+  Rendered shared/_navigation_bar.html.erb (30.4ms)
+  Rendered shared/_flash_notices.html.erb (0.2ms)
+  Rendered shared/_header.html.erb (31.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:44:17 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7JBUxcXjEZGDAe+Cl7aAIji54tvq8Za8BDgxsyFIukU=", "book"=>{"title"=>"XXX", "author"=>"YYY"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `title`, `updated_at`, `user_id`) VALUES ('YYY', '2012-04-27 04:44:23', 'XXX', '2012-04-27 04:44:23', 2)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/books.6
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/books.6" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Processing by BooksController#index as 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 2
+  Rendered books/_index.html.haml (3.7ms)
+  Rendered books/index.html.haml within layouts/application (4.5ms)
+  Rendered shared/_head.html.erb (2.2ms)
+  Rendered shared/_user_bar.html.erb (0.5ms)
+  Rendered shared/_navigation_bar.html.erb (1.2ms)
+  Rendered shared/_flash_notices.html.erb (0.3ms)
+  Rendered shared/_header.html.erb (2.8ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leather_texture.jpg" for 127.0.0.1 at 2012-04-27 00:44:23 -0400
+Served asset /leather_texture.jpg - 304 Not Modified (0ms)

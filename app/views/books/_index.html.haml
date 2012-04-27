@@ -1,0 +1,15 @@
+%h1
+  #{current_user.email}'s Books
+
+= link_to 'Add Book', new_book_path
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Author
+  %tbody
+    - current_user.books.each do |b|
+      %tr
+        %td=b.title
+        %td=b.author
