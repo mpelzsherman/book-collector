@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= render :partial => "shared/head" %>
+</head>
+<body id="app-<%= controller_name %>-<%= action_name %>">
+  <div id="container-main">
+    <%= render :partial => "shared/header" %>
+    <div id="content-container">
+      <div id="content-primary">
+        <%= yield %>
+      </div><!--#content-primary-->
+    </div><!--#content-container-->
+    <%= render :partial => "shared/footer" %>
+  </div><!--#container-main-->
+</body>
+</html>

@@ -1,0 +1,45 @@
+== Welcome to SGE's interview assignment!
+
+== Getting Started
+
+1. Ensure you have installed MySQL (http://dev.mysql.com/downloads/mysql/), Ruby 1.9.3 (RVM is recommended: http://beginrescueend.com/), and RubyGems >= 1.5.3 (http://rubygems.org/pages/download)
+2. Install bundler (gem install bundler)
+3. Install cached bundled gems (bundle install --local --deployment)
+4. Create the databases (bundle exec rake db:create:all)
+5. Set up the database (bundle exec rake db:migrate)
+6. Set up the test database (bundle exec rake db:migrate RAILS_ENV=test)
+
+If you're not familiar with using bundler, simply know that you should use bundle exec before any command line applications. For instance, starting the app server is 'bundle exec script/server', and starting a console session is 'bundle exec script/console'.
+
+
+== Assignment
+
+Create a bare-bones book collection management system.
+
+== Requirements
+
+* Upon signing in, you see your book collection.
+-- If nothing is in your collection, you get a call to action to add a book.
+* Add a book
+* Delete a book
+* Edit a book
+* Basic error handling
+* Unit tests verifying each of the preceding requirements (use the test framework of your choice, e.g. rspec, cucumber)
+
+Note: we care more about the site being usable than pretty.
+
+== Extra Credit
+
+* Pretty, standards-compliant markup + CSS.
+* Ajaxifying the CRUD operations.
+* Advanced error handling
+-- e.g., detect probable duplicates and warn
+* Spellchecking
+* A simple statistics dashboard for admin use.
+* Invite a friend to join the service.
+-- via mail
+-- via Facebook
+* Friending within the site (creating relationships between users)
+-- leveraging Facebook
+* See who has books in common with you
+* Upload and display profile picture

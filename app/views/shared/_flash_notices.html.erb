@@ -1,0 +1,13 @@
+<!-- Info Box --> 
+<% unless flash.empty? %>
+  <div id="info-box">
+    <% flash.select { |k,m| [:error,:notice,:warning].include?(k) && !m.nil? }.each do |key,msg| %>
+      <div id="info-box-<%= key %>" class="info-box-container <%= "info-#{key}" %>">
+        <%= content_tag :div, msg, :class => "#{key}-box" %>
+        <div class="clear" style="line-height:0;height:0;font-size:0px;/* For IE*/"></div>
+      </div>
+      <% flash[key] = nil %>
+    <% end %>
+  </div>
+<% end %>
+<!-- /Info Box -->

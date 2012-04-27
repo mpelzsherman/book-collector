@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+  background-image: url(/assets/leather_texture.jpg);
+}
+
+#container-main {
+  width: 800px;
+  margin: auto;
+}
+
+#site-greeting {
+  background-color: #FEE8D6;
+  border-radius: 8px 8px 0px 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+#navigation_bar {
+  background-color: #AD8F75;
+  position: relative;
+  padding: 5px;
+  border-radius: 0px 0px 8px 8px;
+  margin-bottom: 10px;
+}
+
+ul#nav_links {
+  margin: 0px;
+}
+
+ul#nav_links li {
+  display: inline;
+}
+
+#user-bar {
+  background-color: #CDAF95;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+}
+
+#info-box-notice {
+  background-color: #E6EFC2;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#info-box-error {
+  background-color: #FBE3E4;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.form-container {
+  background-color: #CDAF95;
+  border-radius: 8px;
+  padding: 5px;
+}

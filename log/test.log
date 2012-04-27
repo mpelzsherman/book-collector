@@ -1,0 +1,1001 @@
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'book_collector_test.books' doesn't exist: SHOW FULL FIELDS FROM `books`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `books`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[35m (22.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `books`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `books`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)[0m
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`created_at`, `updated_at`, `id`) VALUES ('2012-04-25 23:45:35', '2012-04-25 23:45:35', 298486374)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:14:24', '2012-04-26 00:14:24', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:14:24', '2012-04-26 00:14:24', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:14:24', '2012-04-26 00:14:24', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:14:24', '2012-04-26 00:14:24', 298486374)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:14:47', '2012-04-26 00:14:47', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:14:47', '2012-04-26 00:14:47', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:14:47', '2012-04-26 00:14:47', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:14:47', '2012-04-26 00:14:47', 298486374)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:16:26', '2012-04-26 00:16:26', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:16:26', '2012-04-26 00:16:26', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:16:26', '2012-04-26 00:16:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:16:26', '2012-04-26 00:16:26', 298486374)[0m
+  [1m[35m (25.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('MyString', '2012-04-26 00:16:26', '2012-04-25', 'MyString', '2012-04-26 00:16:26', 298486374)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190963
+Completed 302 Found in 47ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 298486374 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 298486374 AND `books`.`id` = 980190962 LIMIT 1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 298486374[0m
+  Rendered shared/_head.html.erb (1.2ms)
+  Rendered shared/_user_bar.html.erb (0.9ms)
+  Rendered shared/_navigation_bar.html.erb (2.2ms)
+  Rendered shared/_flash_notices.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (4.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 1[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  Rendered books/_form.html.erb (70.3ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.7ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 298486374 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` LIMIT 1
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 298486374 AND `books`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:18:42', '2012-04-26 00:18:42', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:18:42', '2012-04-26 00:18:42', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:18:42', '2012-04-26 00:18:42', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:18:42', '2012-04-26 00:18:42', 298486374)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('MyString', '2012-04-26 00:18:42', '2012-04-25', 'MyString', '2012-04-26 00:18:42', 980190962)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190964
+Completed 302 Found in 45ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962[0m
+  Rendered shared/_head.html.erb (1.1ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (2.1ms)
+  Rendered shared/_flash_notices.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (67.4ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.2ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:12', '2012-04-26 00:20:12', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:12', '2012-04-26 00:20:12', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:20:13', '2012-04-26 00:20:13', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:20:13', '2012-04-26 00:20:13', 298486374)[0m
+  [1m[35m (22.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('MyString', '2012-04-26 00:20:13', '2012-04-25', 'MyString', '2012-04-26 00:20:13', 980190962)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190965
+Completed 302 Found in 46ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962[0m
+  Rendered shared/_head.html.erb (1.2ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (1.9ms)
+  Rendered shared/_flash_notices.html.erb (0.4ms)
+  Rendered shared/_header.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (68.5ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.2ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:26', '2012-04-26 00:20:26', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:26', '2012-04-26 00:20:26', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:20:26', '2012-04-26 00:20:26', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:20:26', '2012-04-26 00:20:26', 298486374)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('MyString', '2012-04-26 00:20:26', '2012-04-25', 'MyString', '2012-04-26 00:20:26', 980190962)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190966
+Completed 302 Found in 44ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962[0m
+  Rendered shared/_head.html.erb (1.2ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (2.0ms)
+  Rendered shared/_flash_notices.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (67.4ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:43', '2012-04-26 00:20:43', 980190962, 64810937)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('MyString', 'MyString', '2012-04-25', '2012-04-26 00:20:43', '2012-04-26 00:20:43', 298486374, 450215437)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:20:43', '2012-04-26 00:20:43', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:20:43', '2012-04-26 00:20:43', 298486374)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('MyString', '2012-04-26 00:20:43', '2012-04-25', 'MyString', '2012-04-26 00:20:43', 980190962)[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190967
+Completed 302 Found in 45ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (9.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962[0m
+  Rendered shared/_head.html.erb (1.1ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (1.9ms)
+  Rendered shared/_flash_notices.html.erb (0.4ms)
+  Rendered shared/_header.html.erb (3.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (68.4ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.7ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.5ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Redirected to http://test.host/books
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"MyString", "published_at"=>"2012-04-25", "title"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 980190962 AND `books`.`id` = 980190962 LIMIT 1
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Orson Scott Card', 'Ender\'s Game', '1995-04-25', '2012-04-26 00:23:22', '2012-04-26 00:23:22', 980190962, 963461642)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Neal Stephenson', 'Snow Crash', '2005-04-25', '2012-04-26 00:23:22', '2012-04-26 00:23:22', 298486374, 287810320)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:23:22', '2012-04-26 00:23:22', 963461642)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:23:22', '2012-04-26 00:23:22', 287810320)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Orson Scott Card', 'Ender\'s Game', '1995-04-25', '2012-04-26 00:23:41', '2012-04-26 00:23:41', 980190962, 963461642)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Neal Stephenson', 'Snow Crash', '2005-04-25', '2012-04-26 00:23:41', '2012-04-26 00:23:41', 298486374, 287810320)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:23:41', '2012-04-26 00:23:41', 963461642)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:23:41', '2012-04-26 00:23:41', 287810320)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Orson Scott Card', 'Ender\'s Game', '1995-04-25', '2012-04-26 00:24:08', '2012-04-26 00:24:08', 980190962, 963461642)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Neal Stephenson', 'Snow Crash', '2005-04-25', '2012-04-26 00:24:08', '2012-04-26 00:24:08', 298486374, 963461642)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:24:08', '2012-04-26 00:24:08', 963461642)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:24:08', '2012-04-26 00:24:08', 287810320)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"Orson Scott Card", "published_at"=>"1995-04-25", "title"=>"Ender's Game"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('Orson Scott Card', '2012-04-26 00:24:08', '1995-04-25', 'Ender\'s Game', '2012-04-26 00:24:08', 963461642)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190963
+Completed 302 Found in 45ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 980190962
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `books` 
+  [1m[36m (4.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (68.1ms)
+  Rendered shared/_head.html.erb (1.1ms)
+  Rendered shared/_user_bar.html.erb (0.8ms)
+  Rendered shared/_navigation_bar.html.erb (2.0ms)
+  Rendered shared/_flash_notices.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 106.2ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.2ms)
+  Rendered shared/_navigation_bar.html.erb (0.7ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  Rendered books/_form.html.erb (86.4ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.2ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1[0m
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.7ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"Orson Scott Card", "published_at"=>"1995-04-25", "title"=>"Ender's Game"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190962
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `books`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Orson Scott Card', 'Ender\'s Game', '1995-04-25', '2012-04-26 00:26:33', '2012-04-26 00:26:33', 980190962, 963461642)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `books` (`author`, `title`, `published_at`, `created_at`, `updated_at`, `id`, `user_id`) VALUES ('Neal Stephenson', 'Snow Crash', '2005-04-25', '2012-04-26 00:26:33', '2012-04-26 00:26:33', 298486374, 963461642)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('frank@example.com', '2012-04-26 00:26:33', '2012-04-26 00:26:33', 963461642)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `created_at`, `updated_at`, `id`) VALUES ('brad@example.com', '2012-04-26 00:26:33', '2012-04-26 00:26:33', 287810320)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"author"=>"Orson Scott Card", "published_at"=>"1995-04-25", "title"=>"Ender's Game"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `published_at`, `title`, `updated_at`, `user_id`) VALUES ('Orson Scott Card', '2012-04-26 00:26:33', '1995-04-25', 'Ender\'s Game', '2012-04-26 00:26:33', 963461642)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190963
+Completed 302 Found in 46ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `books` [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `books` 
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 980190962
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/books
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `books` 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1
+  Rendered books/_form.html.erb (67.6ms)
+  Rendered shared/_head.html.erb (1.1ms)
+  Rendered shared/_user_bar.html.erb (0.7ms)
+  Rendered shared/_navigation_bar.html.erb (1.9ms)
+  Rendered shared/_flash_notices.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642
+  Rendered shared/_head.html.erb (0.8ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.7ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  Rendered books/_form.html.erb (88.1ms)
+  Rendered shared/_head.html.erb (0.7ms)
+  Rendered shared/_user_bar.html.erb (0.2ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1[0m
+  Rendered shared/_head.html.erb (0.8ms)
+  Rendered shared/_user_bar.html.erb (0.3ms)
+  Rendered shared/_navigation_bar.html.erb (0.6ms)
+  Rendered shared/_flash_notices.html.erb (0.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 980190962 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+Processing by BooksController#update as HTML
+  Parameters: {"book"=>{"author"=>"Orson Scott Card", "published_at"=>"1995-04-25", "title"=>"Ender's Game"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`user_id` = 963461642 AND `books`.`id` = 980190962 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 963461642 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/books/980190962
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (109.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (238.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20120420225901)
+  [1m[35m (159.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (128.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (157.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120420225901')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
