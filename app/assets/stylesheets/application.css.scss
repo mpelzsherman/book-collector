@@ -13,10 +13,6 @@
 */
 @import 'bootstrap.css';
 
-body {
-  background-image: url(/assets/leather_texture.jpg);
-}
-
 #container-main {
   width: 800px;
   margin: auto;
@@ -74,4 +70,8 @@ ul#nav_links li {
   background-color: #CDAF95;
   border-radius: 8px;
   padding: 5px;
+}
+
+.booklist {
+  margin-top: 20px;
 }

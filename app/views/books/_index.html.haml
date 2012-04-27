@@ -6,16 +6,16 @@
 - if !current_user.books.any?
   %h1 Click the link above to add some books to your collection!
 - else
-  %table
-    %thead
-      %tr
-        %th Title
-        %th Author
-    %tbody
-      - current_user.books.each do |b|
+  .booklist
+    %table
+      %thead
         %tr
-          %td=b.title
-          %td=b.author
-          %td= link_to 'Show', book_path(b)
-          %td= link_to 'Edit', edit_book_path(b)
-          %td= link_to 'Destroy', book_path(b), :confirm => 'Are you sure?', :method => :delete
+          %th Title
+          %th Author
+      %tbody
+        - current_user.books.each do |b|
+          %tr
+            %td=link_to b.title, book_path(b)
+            %td=b.author
+            %td= link_to 'Edit', edit_book_path(b)
+            %td= link_to 'Destroy', book_path(b), :confirm => 'Are you sure?', :method => :delete
