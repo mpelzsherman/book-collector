@@ -4,7 +4,8 @@
 = link_to 'Add Book', new_book_path
 
 - if !current_user.books.any?
-  %h1 Click the link above to add some books to your collection!
+  .empty_booklist
+    %h1 Click the link above to add some books to your collection!
 - else
   .booklist
     %table
