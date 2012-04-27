@@ -1,0 +1,11 @@
+%h1 Your Books:
+%table
+  %thead
+    %tr
+      %th Title
+      %th Author
+  %tbody
+    - current_user.books.each do |b|
+      %tr
+        %td=b.title
+        %td=b.author
